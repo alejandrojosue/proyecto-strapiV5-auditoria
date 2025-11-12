@@ -71,6 +71,7 @@ DATABASE_FILENAME=tobemodified
 
 # Additional
 VITE_AUDIT_TOKEN=tobemodified
+```
 
 | Variable | Descripción |
 |-----------|-------------|
@@ -94,41 +95,14 @@ CoreTrack incluye un **script automático** que registra los eventos de inserci�
 El script se ejecuta de forma interna mediante **Strapi Lifecycles**, sin requerir configuración adicional.  
 Cada vez que una entidad se modifica, se crea una entrada en la tabla `audits` con la siguiente estructura:
 
-<table>
-  <thead>
-    <tr>
-      <th>Campo</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>id</code></td>
-      <td>Identificador del evento.</td>
-    </tr>
-    <tr>
-      <td><code>table_name</code></td>
-      <td>Nombre de la tabla afectada.</td>
-    </tr>
-    <tr>
-      <td><code>username</code></td>
-      <td>Usuario que realizó la acción.</td>
-    </tr>
-    <tr>
-      <td><code>action</code></td>
-      <td>Tipo de operación (<code>POST</code>, <code>PUT</code>, <code>DELETE</code>).</td>
-    </tr>
-    <tr>
-      <td><code>description</code></td>
-      <td>Resumen del cambio.</td>
-    </tr>
-    <tr>
-      <td><code>createdAt</code></td>
-      <td>Fecha y hora del evento.</td>
-    </tr>
-  </tbody>
-</table>
-
+| Campo | Descripción |
+|--------|-------------|
+| `id` | Identificador del evento. |
+| `table_name` | Nombre de la tabla afectada. |
+| `username` | Usuario que realizó la acción. |
+| `action` | Tipo de operación (`POST`, `PUT`, `DELETE`). |
+| `description` | Resumen del cambio. |
+| `createdAt` | Fecha y hora del evento. |
 
 
 Además, existe una **interfaz de administración** moderna (React + Strapi Design System) que permite:
