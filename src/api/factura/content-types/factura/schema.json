@@ -58,6 +58,12 @@
       "required": true,
       "min": 0
     },
+    "totalExento": {
+      "type": "decimal"
+    },
+    "totalExonerado": {
+      "type": "decimal"
+    },
     "estado": {
       "type": "enumeration",
       "default": "PAGADO",

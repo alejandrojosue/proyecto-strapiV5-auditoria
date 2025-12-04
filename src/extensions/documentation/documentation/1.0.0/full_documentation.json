@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-12-03T06:38:34.761Z"
+    "x-generation-date": "2025-12-04T03:54:11.268Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -10008,6 +10008,14 @@
                 "type": "number",
                 "format": "float"
               },
+              "totalExento": {
+                "type": "number",
+                "format": "float"
+              },
+              "totalExonerado": {
+                "type": "number",
+                "format": "float"
+              },
               "estado": {
                 "type": "string",
                 "enum": [
@@ -13105,6 +13113,14 @@
                 "type": "number",
                 "format": "float"
               },
+              "totalExento": {
+                "type": "number",
+                "format": "float"
+              },
+              "totalExonerado": {
+                "type": "number",
+                "format": "float"
+              },
               "estado": {
                 "type": "string",
                 "enum": [
@@ -13277,6 +13293,14 @@
             "format": "float"
           },
           "total": {
+            "type": "number",
+            "format": "float"
+          },
+          "totalExento": {
+            "type": "number",
+            "format": "float"
+          },
+          "totalExonerado": {
             "type": "number",
             "format": "float"
           },
@@ -14723,6 +14747,14 @@
                   "format": "float"
                 },
                 "total": {
+                  "type": "number",
+                  "format": "float"
+                },
+                "totalExento": {
+                  "type": "number",
+                  "format": "float"
+                },
+                "totalExonerado": {
                   "type": "number",
                   "format": "float"
                 },

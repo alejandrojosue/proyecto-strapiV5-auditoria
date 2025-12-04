@@ -682,6 +682,8 @@ export interface ApiFacturaFactura extends Struct.CollectionTypeSchema {
         number
       >;
     totalDescuento: Schema.Attribute.Decimal;
+    totalExento: Schema.Attribute.Decimal;
+    totalExonerado: Schema.Attribute.Decimal;
     totalImpuestoD: Schema.Attribute.Decimal;
     totalImpuestoQ: Schema.Attribute.Decimal &
       Schema.Attribute.Required &
